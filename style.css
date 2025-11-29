@@ -1,0 +1,63 @@
+:root{
+    
+}
+.container {
+    display: grid;
+    grid-template: 1fr 2fr 5fr / 1fr 4fr; 
+}
+
+.dashboard {
+    grid-area: 1 / 1 / 4 / 2;
+    display: flex;
+    flex-direction: column;
+    background-color: #14a2e4;
+    color: white;
+}
+
+.logo{
+
+}
+
+.nav li{
+
+}
+
+.search-container{
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+}
+
+.search-container input{
+    margin: 10px 20px;
+    border-radius: 25px;
+    border-style: none;
+    background-color: lightgray;
+}
+
+.user-bar{
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.welcome{
+    display: block;
+}
+
+.welcome span{
+    font-size: small;
+}
+
+.welcome p{
+    font-size: large;
+}
+
+.buttons button{
+    background-color: #14a2e4;
+    color: white;
+    border-color: white;
+    border-radius:  25px;
+    padding: 5px 10px;
+    border-style: none;
+}
