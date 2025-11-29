@@ -8,23 +8,33 @@
 
 .dashboard {
     grid-area: 1 / 1 / 4 / 2;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template: 1fr 4fr 4fr / 1fr 3fr;
     background-color: #14a2e4;
     color: white;
 }
 
 .logo{
-
+    grid-area: 1 / 1 / 2 / 3;
 }
 
-.nav li{
+.nav{
+    grid-area: 2 / 1 / 3 / 3;
+}
 
+.site-help{
+    grid-area: 3 / 1 / 4 / 3;
 }
 
 .search-container{
     grid-area: 1 / 2 / 2 / 3;
     display: flex;
+    align-items: center;
+    flex: 2;
+}
+
+.search-container img{
+    height: 25px;
 }
 
 .search-container input{
@@ -32,6 +42,17 @@
     border-radius: 25px;
     border-style: none;
     background-color: lightgray;
+}
+
+.user-status{
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-information{
+    outline: auto;
+    align-self: center;
+    justify-content: flex-end;
 }
 
 .user-bar{
@@ -60,4 +81,41 @@
     border-radius:  25px;
     padding: 5px 10px;
     border-style: none;
+}
+
+#home {
+    list-style-image: url("./assets/icons/home.svg");
+    
+}
+
+#profile {
+    list-style-image: url("./assets/icons/profile.svg")
+}
+
+#messages {
+    list-style-image: url("./assets/icons/messages.svg")
+}
+
+#history {
+    list-style-image: url("./assets/icons/history.svg")
+}
+
+#tasks {
+    list-style-image: url("./assets/icons/tasks.svg");
+}
+
+#communities {
+    list-style-image: url("./assets/icons/communities.svg");
+}
+
+#settings {
+    list-style-image: url("./assets/icons/settings.svg");
+}
+
+#support {
+    list-style-image: url("./assets/icons/help.svg");
+}
+
+#privacy {
+    list-style-image: url("./assets/icons/privacy.svg");
 }
